@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<!--
+  * version.xml
+  *
+  * Copyright (c) 2012 Alberto Souza, Anne camille
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Plugin version information.
+  *
+  * $Id$
+  -->
+<version>
+	<application>tema_csec</application>
+	<type>plugins.themes</type>
+	<release>0.1.0.0</release>
+	<date>2012-07-27</date>
+</version>
