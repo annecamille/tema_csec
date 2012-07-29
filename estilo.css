@@ -128,6 +128,22 @@ ul, ol {
 	font-family: Arial, Helvetica, sans-serif; 
 }
 
+#main.three_column {
+  width: 580px;
+}
+
+#main.left_column {
+  width: 760px;
+}
+
+#main.right_column {
+  width: 760px;
+}
+
+#main.full-width {
+  width: 970px;
+}
+
 
 #navbar {
 	border-bottom: none;
@@ -291,6 +307,7 @@ ul.menu li a:visited {
   color:#FFF; 
   float: left;
   margin: 0 0 0 23px;
+  text-transform: none;
 }
 
 ul.menu li:hover,
@@ -364,14 +381,23 @@ li.home {
 
 #rightSidebar {
   float: right;
-  width: 200px;
+  width: 180px; 
   padding: 1em 0em 1em 0em;
   font-size: 100%;
   height: 100%;
   margin-right: 10px;
-  margin-left: 5px
+  margin-left: 5px;
 }
 
+#leftSidebar {
+  float: left;
+  width: 180px; 
+  padding: 1em 0em 1em 0em;
+  font-size: 100%;
+  height: 100%;
+  margin-right: 5px;
+  margin-left: 10px;
+}
 
 /******** Footer */
 

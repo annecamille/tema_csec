@@ -44,16 +44,17 @@ class CSecThemePlugin extends ThemePlugin {
 
 	/**
 	 * Activate the theme.
-   * Add plugin theme template dir
+     * Add plugin theme template dir
 	 */
 	function activate(&$templateMgr) {
-    // add the plugin template dir
-    $theme_template_dir = $_SERVER['DOCUMENT_ROOT'] . Request::getBasePath() . '/' . $this->getPluginPath() . '/templates' ;
-    array_unshift($templateMgr->template_dir,$theme_template_dir );
 
 		if (($stylesheetFilename = $this->getStylesheetFilename()) != null) {
 			$path = Request::getBaseUrl() . '/' . $this->getPluginPath() . '/' . $stylesheetFilename;
 			$templateMgr->addStyleSheet($path);
+
+			// add the plugin template dir
+			$theme_template_dir = $_SERVER['DOCUMENT_ROOT'] . Request::getBasePath() . '/' . $this->getPluginPath() . '/templates' ;
+			array_unshift($templateMgr->template_dir,$theme_template_dir );
 		}
 	}
 }

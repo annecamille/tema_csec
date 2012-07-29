@@ -108,7 +108,15 @@
 	</div>
 {/if}
 
-<div id="main">
+{if $leftSidebarCode && $rightSidebarCode}
+<div id="main" class="three_column">
+{elseif $leftSidebarCode}
+<div id="main" class="left_column">
+{elseif $rightSidebarCode}
+<div id="main" class="right_column">
+{else}
+<div id="main" class="full-width">
+{/if}
 
 <h2>{$pageTitleTranslated}</h2>
 
@@ -117,13 +125,5 @@
 	<h3>{$pageSubtitleTranslated}</h3>
 {/if}
 
-{if $leftSidebarCode && $rightSidebarCode}
-<div id="content" class="three_column">
-{elseif $leftSidebarCode}
-<div id="content" class="left_column">
-{elseif $rightSidebarCode}
-<div id="content" class="right_column">
-{else}
-<div id="content" class="full-width">
-{/if}
+<div id="content">
 
