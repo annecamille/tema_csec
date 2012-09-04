@@ -63,7 +63,7 @@ table { border-collapse: collapse; width: 100%; }
 hr { display: none; }
 img { padding: 0px; margin: 0px; border: none; text-align: center;}
 
-a:link { text-decoration: none; border: 0px; -moz-outline-style: none;}
+a:link { text-decoration: none; border: 0px; -moz-outline-style: none; color: #09C;}
 a:active { text-decoration: underline; color : #0099cc; border: 0px; -moz-outline-style: none;background: transparent;}
 a:visited { text-decoration: none; color : #0099cc; border: 0px; -moz-outline-style: none; background: transparent; }
 a:hover { text-decoration: underline; color : #025d87; border: 0px; -moz-outline-style: none;background: transparent;} 
