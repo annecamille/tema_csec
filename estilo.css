@@ -129,7 +129,9 @@ ul, ol {
 }
 
 #main.three_column {
-  width: 580px;
+	width: 580px;
+	border-right: 1px solid #D5D5D5;
+	border-left: 1px solid #D5D5D5;
 }
 
 #main.left_column {
