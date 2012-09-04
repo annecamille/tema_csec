@@ -390,15 +390,14 @@ li.home {
   margin-right: 10px;
   margin-left: 5px;
 }
-
 #leftSidebar {
   float: left;
   width: 180px; 
-  padding: 1em 0em 1em 0em;
+  padding: 5px 2px 0 0;
   font-size: 100%;
   height: 100%;
   margin-right: 5px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 /******** Footer */
