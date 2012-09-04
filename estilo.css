@@ -512,5 +512,15 @@ text-decoration: none;
 .footer-menu {
   padding: 0 0 0 0;
 }
-
-
+table.announcements td.headseparator {
+border-top: none;
+padding: 0;
+}
+table.announcements td.nodata {
+font-style: normal;
+color: #969696;
+font-size: 11px;
+}
+table.announcements td.endseparator {
+border-top: 1px dashed #BBB;
+}
