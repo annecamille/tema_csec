@@ -110,7 +110,12 @@ ul, ol {
   font-weight: bolder;
 }
 
-
+#sidebar div.block span.blockTitle {
+	color: #E78123;
+	border-bottom: 1px solid #D1D1D1;
+	padding: 0 0 5px 0;
+	margin: 0 0 5px 0;
+}
 #main {
   float: left;
   width: 63%;
@@ -122,7 +127,7 @@ ul, ol {
 
 #main h2 {
 	font-family: trebuchet ms;
-	font-size: 18px;
+	font-size: 16px;
 	margin: 10px 0;
 	color: #E78123;
 	padding: 0 0 5px 0;
