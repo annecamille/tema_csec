@@ -47,8 +47,8 @@ class CSecThemePlugin extends ThemePlugin {
      * Add plugin theme template dir
 	 */
 	function activate(&$templateMgr) {
-
-		if (($stylesheetFilename = $this->getStylesheetFilename()) != null) {
+	
+	if (($stylesheetFilename = $this->getStylesheetFilename()) != null) {
 			$path = Request::getBaseUrl() . '/' . $this->getPluginPath() . '/' . $stylesheetFilename;
 			$templateMgr->addStyleSheet($path);
 
@@ -59,6 +59,7 @@ class CSecThemePlugin extends ThemePlugin {
 	}
 }
 
+// EXIBIR O CONTEÚDO DE UMA VARIAVÉL NO CONSOLE DO JAVASCRIPT DO NAVEGADOR
 function debugaa($algo) {
   $algo = json_encode($algo);
   print "<script>console.log($algo)</script>";
