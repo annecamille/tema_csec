@@ -572,3 +572,46 @@ div.img-date {
 span.date {
 	color:	#A8A8A8;
 }
+
+/* Menu pequeno com icones */
+
+div#menu-ocs {
+	width:	184px;
+	margin:	5px 0;
+}
+div#menu-ocs ul#menu-ocs-inscricao, ul#menu-ocs-enviar-trabalho, ul#menu-ocs-sobre,
+ul#menu-ocs-localizacao {
+	margin:	0;
+	padding: 0 0 0 0;
+	list-style-position: inside;
+	font-size:	12px;
+	line-height: 22px;
+	font-family:	verdana;
+}
+div#menu-ocs ul li a {
+	color: #8a8a8a;
+	text-decoration: none;
+}
+div#menu-ocs ul li a:hover {
+	color: #5099cd;
+	text-decoration: none;
+}
+div#menu-ocs ul#menu-ocs-inscricao {
+	list-style-image:	url('./images/edit.gif');
+}
+div#menu-ocs ul#menu-ocs-enviar-trabalho {
+	list-style-image:	url('./images/upload.png');
+}
+div#menu-ocs ul#menu-ocs-sobre {
+	list-style-image:	url('./images/add.png');
+}
+div#menu-ocs ul#menu-ocs-localizacao {
+	list-style-image:	url('./images/pin.png');
+}
+
+div#menu-ocs ul li:hover {
+	background: #f2f2f2;
+}
+
+
+
