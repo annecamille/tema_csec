@@ -29,12 +29,18 @@
 	<link rel="stylesheet" href="{$baseUrl}/lib/pkp/styles/common.css" type="text/css" />
 	<link rel="stylesheet" href="{$baseUrl}/styles/common.css" type="text/css" />
 	
+	<!-- Facebook OpenGraph Tags -->
+	<meta property="og:image" content="{$baseUrl}/plugins/themes/tema_csec/images/topo.png">
+	<meta property="og:site_name" content="Semana de Ciência, Cultura e Saúde">
+	<meta property="og:description" content="Direito à diversidade cultural no cuidado à saúde">
+	<!-- Facebook OpenGraph Tags END -->
+	
 	<!-- Base Jquery -->
 	{if $allowCDN}<script src="http://www.google.com/jsapi"></script>
 	<script>
 		google.load("jquery", "1");
 		google.load("jqueryui", "1");
-	</script>
+	</script> 
 	{else}
 	<script type="text/javascript" src="{$baseUrl}/lib/pkp/js/lib/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="{$baseUrl}/lib/pkp/js/lib/jquery/plugins/jqueryUi.min.js"></script>
@@ -66,7 +72,7 @@
 
 <div id="header">
 <div id="headerTitle">
-<h1>
+<h1 style="display:none;">
 {if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
 	<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogoAltText != ''}alt="{$displayPageHeaderLogoAltText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
 {/if}
