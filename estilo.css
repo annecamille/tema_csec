@@ -613,5 +613,17 @@ div#menu-ocs ul li:hover {
 	background: #f2f2f2;
 }
 
+div#content ul.menu  {
+  color: black;
+}
+
+div#content ul.menu li a {
+  color: #0099CC;
+}
+
+div#content ul.menu li a:hover {
+  color: #0099CC;
+  text-decoration: underline;
+}
 
 
