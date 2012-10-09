@@ -85,8 +85,6 @@ ul, ol {
   height: 190px;
   margin-bottom: 30px;
   margin-top: 0;
-
-  background:  url('./images/bg_topo.jpg') no-repeat;
 }
 
  #body {
@@ -95,15 +93,8 @@ ul, ol {
 }
 
 #headerTitle {
-	padding-bottom: 10px;
-	padding-top: 50px;
-	height: 97px;	
-  text-align: center;
-
-  width: 680px !important;
-  margin-left: 320px;
+height: 100px;
 }
-
 
 #header h1 {
   font-size: 2.2em;
