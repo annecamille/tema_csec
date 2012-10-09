@@ -575,12 +575,12 @@ span.date {
 
 /* Menu pequeno com icones */
 
-div#menu-ocs {
+ul#menu-ocs {
 	width:	184px;
 	margin:	5px 0;
 }
-div#menu-ocs ul#menu-ocs-inscricao, ul#menu-ocs-enviar-trabalho, ul#menu-ocs-sobre,
-ul#menu-ocs-localizacao {
+ul#menu-ocs li#menu-ocs-inscricao, li#menu-ocs-enviar-trabalho, li#menu-ocs-sobre,
+li#menu-ocs-localizacao {
 	margin:	0;
 	padding: 0 0 0 0;
 	list-style-position: inside;
@@ -588,28 +588,28 @@ ul#menu-ocs-localizacao {
 	line-height: 22px;
 	font-family:	verdana;
 }
-div#menu-ocs ul li a {
+ul#menu-ocs li a {
 	color: #8a8a8a;
 	text-decoration: none;
 }
-div#menu-ocs ul li a:hover {
+ul#menu-ocs li a:hover {
 	color: #5099cd;
 	text-decoration: none;
 }
-div#menu-ocs ul#menu-ocs-inscricao {
+ul#menu-ocs li#menu-ocs-inscricao {
 	list-style-image:	url('./images/edit.gif');
 }
-div#menu-ocs ul#menu-ocs-enviar-trabalho {
+ul#menu-ocs li#menu-ocs-enviar-trabalho {
 	list-style-image:	url('./images/upload.png');
 }
-div#menu-ocs ul#menu-ocs-sobre {
+ul#menu-ocs li#menu-ocs-sobre {
 	list-style-image:	url('./images/add.png');
 }
-div#menu-ocs ul#menu-ocs-localizacao {
+ul#menu-ocs li#menu-ocs-localizacao {
 	list-style-image:	url('./images/pin.png');
 }
 
-div#menu-ocs ul li:hover {
+ul#menu-ocs li:hover {
 	background: #f2f2f2;
 }
 
