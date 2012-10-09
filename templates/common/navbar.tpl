@@ -13,7 +13,7 @@
 		
 		<li><a href="{$baseUrl}/index.php/CRSC/index/pages/view/sobre">{translate key="navigation.about"}</a></li>
 		
-		<li><a href="{$baseUrl}/index.php/CRSC/index/pages/view/programacao">Programação</a></li>
+		<li><a href="{$baseUrl}/index.php/CRSC/index/pages/view/programacao">ProgramaÃ§Ã£o</a></li>
 		
 		{if $isUserLoggedIn}
 
