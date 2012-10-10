@@ -32,7 +32,7 @@
 		
 		
 		{if $isUserLoggedIn}
-			<li><a href="{url conference="index" page="user"}">{translate key="navigation.userHome"}</a></li>
+			<li><a href="{url page="user"}">{translate key="navigation.userHome"}</a></li>
 		{else}
 			<li><a href="{url page="login"}">{translate key="navigation.login"}</a></li>
 			<li><a href="{url page="user" op="account"}">{translate key="navigation.account"}</a></li>
