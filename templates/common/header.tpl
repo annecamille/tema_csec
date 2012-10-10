@@ -31,8 +31,8 @@
 	
 	<!-- Facebook OpenGraph Tags -->
 	<meta property="og:image" content="{$baseUrl}/plugins/themes/tema_csec/images/topo.png">
-	<meta property="og:site_name" content="Semana de Ciência, Cultura e Saúde">
-	<meta property="og:description" content="Direito à diversidade cultural no cuidado à saúde">
+	<meta property="og:site_name" content="Semana de CiÃªncia, Cultura e SaÃºde">
+	<meta property="og:description" content="Direito Ã  diversidade cultural no cuidado Ã  saÃºde">
 	<!-- Facebook OpenGraph Tags END -->
 	
 	<!-- Base Jquery -->
