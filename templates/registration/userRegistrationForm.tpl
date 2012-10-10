@@ -43,7 +43,6 @@
 	<div class="separator"></div>
 {/if}
 
-<div class="separator"></div>
 <div id="account">
 <h3>{translate key="schedConf.registration.account"}</h3>
 {if $userLoggedIn}
@@ -110,78 +109,60 @@
 {/if}
 
 <tr valign="top">
-	<td class="label">{fieldLabel name="salutation" key="user.salutation"}</td>
-	<td class="value"><input type="text" name="salutation" id="salutation" value="{$salutation|escape}" size="20" maxlength="40" class="textField" /></td>
-</tr>
-
-<tr valign="top">
-	<td class="label">{fieldLabel name="firstName" required="true" key="user.firstName"}</td>
+	<td class="label">Nome*</td>
 	<td class="value"><input type="text" id="firstName" name="firstName" value="{$firstName|escape}" size="20" maxlength="40" class="textField" /></td>
 </tr>
 	
 <tr valign="top">
-	<td class="label">{fieldLabel name="middleName" key="user.middleName"}</td>
-	<td class="value"><input type="text" id="middleName" name="middleName" value="{$middleName|escape}" size="20" maxlength="40" class="textField" /></td>
-</tr>
-	
-<tr valign="top">
-	<td class="label">{fieldLabel name="lastName" required="true" key="user.lastName"}</td>
+	<td class="label">Sobrenome*</td>
 	<td class="value"><input type="text" id="lastName" name="lastName" value="{$lastName|escape}" size="20" maxlength="90" class="textField" /></td>
 </tr>
 
 <tr valign="top">
-	<td class="label">{fieldLabel name="initials" key="user.initials"}</td>
-	<td class="value"><input type="text" id="initials" name="initials" value="{$initials|escape}" size="5" maxlength="5" class="textField" />&nbsp;&nbsp;{translate key="user.initialsExample"}</td>
+  <td class="label">{fieldLabel name="email" required="true" key="user.email"}</td>
+  <td class="value"><input type="text" id="email" name="email" value="{$email|escape}" size="30" maxlength="90" class="textField" /></td>
 </tr>
 	
 <tr valign="top">
-	<td class="label">{fieldLabel name="affiliation" key="user.affiliation" required="true"}</td>
+	<td class="label">Empresa ou {fieldLabel name="affiliation" key="user.affiliation" required="true"}</td>
 	<td class="value"><textarea id="affiliation" name="affiliation" rows="5" cols="40" class="textArea">{$affiliation|escape}</textarea></td>
 </tr>
 
+<input type="hidden" value="." name="mailingAddress" /> 
+
+<input type="hidden" value="BR" name="country" />	
+
+</table>
+
+<div class="separator"></div>
+<br/>
+<p>O evento Iº Conexão Internacional Saúde e (Ciber) Cultura da
+ <strong>Semana Nacional Ciência, Cultura e Saúde</strong> acontecerá na 
+ <a href="http://www.next.icict.fiocruz.br/sec/" target="_blank">Rede Saúde e Cultura na internet</a><br/>
+ </p>
+<br/>
+<p> Para saber mais sobre a Rede Saúde e Cultura na internet acesse o 
+<a href="http://www.next.icict.fiocruz.br/sec/sobre">Sobre a rede na internet</a>
+</p>
+<br/>
+<table class="data" width="100%">
+
 <tr valign="top">
-	<td class="label">{fieldLabel name="signature" key="user.signature"}</td>
-	<td class="value"><textarea name="signature[{$formLocale|escape}]" id="signature" rows="5" cols="40" class="textArea">{$signature[$formLocale]|escape}</textarea></td>
+ <td class="label">Você gostaria de participar da 
+ <a href="http://www.next.icict.fiocruz.br/sec/" target="_blank">Rede Saúde e Cultura na internet</a>
+ e aceita os <a href="http://www.next.icict.fiocruz.br/sec/termos-de-servico">termos de serviço da rede</a>?
+ </td>
 </tr>
 
 <tr valign="top">
-	<td class="label">{fieldLabel name="email" required="true" key="user.email"}</td>
-	<td class="value"><input type="text" id="email" name="email" value="{$email|escape}" size="30" maxlength="90" class="textField" /></td>
-</tr>
-
-<tr valign="top">
-	<td class="label">{fieldLabel name="userUrl" key="user.url"}</td>
-	<td class="value"><input type="text" id="userUrl" name="userUrl" value="{$userUrl|escape}" size="30" maxlength="90" class="textField" /></td>
-</tr>
-	
-<tr valign="top">
-	<td class="label">{fieldLabel name="phone" key="user.phone"}</td>
-	<td class="value"><input type="text" name="phone" id="phone" value="{$phone|escape}" size="15" maxlength="24" class="textField" /></td>
-</tr>
-	
-<tr valign="top">
-	<td class="label">{fieldLabel name="fax" key="user.fax"}</td>
-	<td class="value"><input type="text" name="fax" id="fax" value="{$fax|escape}" size="15" maxlength="24" class="textField" /></td>
-</tr>
-	
-<tr valign="top">
-	<td class="label">{fieldLabel name="mailingAddress" key="common.mailingAddress"}</td>
-	<td class="value"><textarea name="mailingAddress" id="mailingAddress" rows="3" cols="40" class="textArea">{$mailingAddress|escape}</textarea></td>
-</tr>
-	
-<tr valign="top">
-	<td class="label">{fieldLabel name="country" key="common.country"}</td>
-	<td class="value">
-		<select name="country" id="country" class="selectMenu">
-			<option value=""></option>
-			{html_options options=$countries selected=$country}
-		</select>
-	</td>
-</tr>
-
-<tr valign="top">
-	<td class="label">{fieldLabel name="biography" key="user.biography"}<br />{translate key="user.biography.description"}</td>
-	<td class="value"><textarea name="biography[{$formLocale|escape}]" id="biography" rows="5" cols="40" class="textArea">{$biography[$formLocale]|escape}</textarea></td>
+ 
+  <td class="value">
+    <select name="participardarede" id="participardarede" class="selectMenu">
+      <option value="1">Sim eu quero participar da Rede da Rede Saúde e Cultura na internet</option>
+      <option value="0">Não quero participar ou não concordo com os termos da rede</option>
+    </select>
+  </td>
+  
 </tr>
 
 </table>
