@@ -11,7 +11,7 @@
 {strip}
 {assign var="pageTitle" value="schedConf.registration"}
 {include file="common/header.tpl"}
-{/strip}
+{/strip} 
 
 <form action="{url op="register"}" name="registration" method="post">
 <input type="hidden" name="registrationTypeId" value="{$registrationTypeId|escape}" />
