@@ -583,6 +583,8 @@ ul#menu-ocs li a {
 	color: #8a8a8a;
 	text-decoration: none;
 	display: block;
+	padding: 3px;
+	margin: 3px;
 }
 ul#menu-ocs li a:hover {
 	color: #5099cd;
