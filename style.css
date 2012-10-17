@@ -582,11 +582,13 @@ li#menu-ocs-localizacao {
 ul#menu-ocs li a {
 	color: #8a8a8a;
 	text-decoration: none;
+	display: block;
 }
 ul#menu-ocs li a:hover {
 	color: #5099cd;
 	text-decoration: none;
 }
+/*
 ul#menu-ocs li#menu-ocs-inscricao {
 	list-style-image:	url('./images/edit.gif');
 }
@@ -603,6 +605,7 @@ ul#menu-ocs li#menu-ocs-localizacao {
 ul#menu-ocs li:hover {
 	background: #f2f2f2;
 }
+*/
 
 div#content ul.menu  {
   color: black;
