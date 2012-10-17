@@ -23,9 +23,10 @@
 				</div>
 			</div>
 			<div id="icones">
-				<a class="fiocruz" href="http://portal.fiocruz.br/">&nbsp;</a>
-				<a class="governo" href="http://www.brasil.gov.br/">&nbsp;</a>
-				<a class="mcultura" href="http://www.cultura.gov.br/">&nbsp;</a>
+				<a class="fiocruz" href="http://portal.fiocruz.br/" target="_blank">&nbsp;</a>
+				<a class="mcultura" href="http://www.cultura.gov.br/" target="_blank">&nbsp;</a>
+				<a class="msaude" href="http://portalsaude.saude.gov.br/portalsaude/" target="_blank">&nbsp;</a>
+				<a class="governo" href="http://www.brasil.gov.br/" target="_blank">&nbsp;</a>
 			</div>
 			<div class="clr"></div>
 							
