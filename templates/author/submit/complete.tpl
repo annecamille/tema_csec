@@ -13,7 +13,7 @@
 {include file="common/header.tpl"}
 {/strip}
 <div id="submissionComplete">
-<p>{translate key="author.submit.submissionComplete" conferenceTitle=$conference->getConferenceTitle()}</p>
+<p>Submissão concluída. Agradecemos seu interesse em contribuir para o evento Semana de Ciência, Cultura e Saúde.</p>
 
 <p>&#187; <a href="{url page="author"}">{translate key="author.track"}</a></p>
 </div>
