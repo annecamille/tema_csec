@@ -124,6 +124,11 @@
 </tr>
 
 <tr valign="top">
+  <td class="label">CPF:*</td>
+  <td class="value"><input type="text" id="cpf" name="cpf" value="" size="30" maxlength="90" class="textField" /></td>
+</tr>
+
+<tr valign="top">
   <td class="label">Telefone fixo ou celular de contato</td>
   <td class="value"><input type="text" name="phone" id="phone" value="{$phone|escape}" size="15" maxlength="24" class="textField" /></td>
 </tr>
