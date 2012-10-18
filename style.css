@@ -422,24 +422,29 @@ li.home {
   background: url('./images/bg-footer.jpg') repeat-x;
 }
 
-#icones a.fiocruz , #icones a.governo, #icones a.mcultura {
+#icones a.fiocruz , #icones a.governo, #icones a.mcultura,#icones a.msaude {
 	height: 52px;
 	float: left;
 	text-decoration: none;
 	margin: 0 10px 0 0;
 }
 #icones a.fiocruz {
-	width: 130px;
-	background: url('./images/footer-icone.jpg');
+	width: 140px;
+	background: url('./images/assinatura.png');
 }
 #icones a.governo {
-	width: 140px;
-	background: url('./images/footer-icone.jpg') -150px 0;
+	width: 130px;
+	background: url('./images/assinatura.png') 145px 0;
 }
 #icones a.mcultura{
-	width: 60px;
-	background: url('./images/footer-icone.jpg') 60px 0;
+	width: 90px;
+	background: url('./images/assinatura.png') 350px 0;
 }
+#icones a.msaude{
+	width: 80px;
+	background: url('./images/assinatura.png') 242px 0;
+}
+
 
 #footer #footer-links {
   float: left;
