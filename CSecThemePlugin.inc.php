@@ -35,7 +35,7 @@ class CSecThemePlugin extends ThemePlugin {
 	}
 
 	function getStylesheetFilename() {
-		return 'style.css';
+		return 'styles.css';
 	}
 
 	function getLocaleFilename($locale) {
