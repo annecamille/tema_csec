@@ -125,7 +125,7 @@
 
 <tr valign="top">
   <td class="label">CPF:*</td>
-  <td class="value"><input type="text" id="cpf" name="cpf" value="" size="30" maxlength="90" class="textField" /></td>
+  <td class="value"><input type="text" id="cpf" name="cpf" value="{$smarty.post.cpf}" size="30" maxlength="90" class="textField" /></td>
 </tr>
 
 <tr valign="top">
@@ -147,16 +147,16 @@
 </tr>  
 <tr valign="top">  
   <td class="value">
-    <input type="checkbox" name="naturezaatuacao" value="a">Profissional de Saúde<br>
-    <input type="checkbox" name="naturezaatuacao" value="b">Profissional de Educação<br>
-    <input type="checkbox" name="naturezaatuacao" value="c">Profissional de Cultura<br>
-    <input type="checkbox" name="naturezaatuacao" value="d">Cargo de Chefia na Adm. Pública<br>
-    <input type="checkbox" name="naturezaatuacao" value="e">Artista, Promotor Cultural, Artesão<br>
-    <input type="checkbox" name="naturezaatuacao" value="f">Militante de movimento social<br>
-    <input type="checkbox" name="naturezaatuacao" value="g">Estudante<br>
-    <input type="checkbox" name="naturezaatuacao" value="h">Pesquisador<br>
-    <input type="checkbox" name="naturezaatuacao" value="i">Voluntário<br>
-    Outro, especifique: <input type="text" name="naturezaatuacaooutro"><br>
+    <input type="checkbox" name="naturezaatuacao[]" value="a">Profissional de Saúde<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="b">Profissional de Educação<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="c">Profissional de Cultura<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="d">Cargo de Chefia na Adm. Pública<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="e">Artista, Promotor Cultural, Artesão<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="f">Militante de movimento social<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="g">Estudante<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="h">Pesquisador<br>
+    <input type="checkbox" name="naturezaatuacao[]" value="i">Voluntário<br>
+    Outro, especifique: <input type="text" name="naturezaatuacaooutro" {$smarty.post.naturezaatuacaooutro}"><br>
   </td>
 </tr>
  
@@ -170,16 +170,16 @@ Nacional da Rede Saúde e Cultura? (indique até duas prioridades):</strong><br/
 </tr>
 <tr valign="top">
   <td class="value">
-    <input type="checkbox" name="temas" value="a">Práticas Tradicionais em Saúde<br>
-    <input type="checkbox" name="temas" value="b">Práticas integrativas e complementares em saúde<br>
-    <input type="checkbox" name="temas" value="c">Equidade em saúde e cultura<br>
-    <input type="checkbox" name="temas" value="d">Saúde Indígena<br>
-    <input type="checkbox" name="temas" value="e">Saúde Mental<br>
-    <input type="checkbox" name="temas" value="f">A Arte e o cuidado à saúde (promoção, prevenção e reestabelecimento da
+    <input type="checkbox" name="temas[]" value="a">Práticas Tradicionais em Saúde<br>
+    <input type="checkbox" name="temas[]" value="b">Práticas integrativas e complementares em saúde<br>
+    <input type="checkbox" name="temas[]" value="c">Equidade em saúde e cultura<br>
+    <input type="checkbox" name="temas[]" value="d">Saúde Indígena<br>
+    <input type="checkbox" name="temas[]" value="e">Saúde Mental<br>
+    <input type="checkbox" name="temas[]" value="f">A Arte e o cuidado à saúde (promoção, prevenção e reestabelecimento da
 saúde)<br>
-    <input type="checkbox" name="temas" value="g">Controle social, participação e solidariedade<br>
-    <input type="checkbox" name="temas" value="h">Acesso a conhecimentos e expressões culturais tradicionais<br>
-    <input type="checkbox" name="temas" value="i">Necessidades de formação para apoiar a gestão, os serviços e as práticas na
+    <input type="checkbox" name="temas[]" value="g">Controle social, participação e solidariedade<br>
+    <input type="checkbox" name="temas[]" value="h">Acesso a conhecimentos e expressões culturais tradicionais<br>
+    <input type="checkbox" name="temas[]" value="i">Necessidades de formação para apoiar a gestão, os serviços e as práticas na
 interface saúde e cultura<br>  
   <br>
   </td>
