@@ -122,17 +122,71 @@
   <td class="label">{fieldLabel name="email" required="true" key="user.email"}</td>
   <td class="value"><input type="text" id="email" name="email" value="{$email|escape}" size="30" maxlength="90" class="textField" /></td>
 </tr>
-	
+
 <tr valign="top">
-	<td class="label">Empresa ou {fieldLabel name="affiliation" key="user.affiliation" required="true"}</td>
+  <td class="label">Telefone fixo ou celular de contato</td>
+  <td class="value"><input type="text" name="phone" id="phone" value="{$phone|escape}" size="15" maxlength="24" class="textField" /></td>
+</tr>
+
+<tr valign="top">
+	<td class="label">Nome completo da {fieldLabel name="affiliation" key="user.affiliation" required="true"} onde atua</td>
 	<td class="value"><textarea id="affiliation" name="affiliation" rows="5" cols="40" class="textArea">{$affiliation|escape}</textarea></td>
 </tr>
+
+</table>
+<div class="separator"></div>
+<table class="data" width="100%">
+
+<tr valign="top">
+  <td class="label"><strong>Informe a natureza da sua atuação:</strong><br/><br/></td>
+</tr>  
+<tr valign="top">  
+  <td class="value">
+    <input type="checkbox" name="naturezaatuacao" value="a">Profissional de Saúde<br>
+    <input type="checkbox" name="naturezaatuacao" value="b">Profissional de Educação<br>
+    <input type="checkbox" name="naturezaatuacao" value="c">Profissional de Cultura<br>
+    <input type="checkbox" name="naturezaatuacao" value="d">Cargo de Chefia na Adm. Pública<br>
+    <input type="checkbox" name="naturezaatuacao" value="e">Artista, Promotor Cultural, Artesão<br>
+    <input type="checkbox" name="naturezaatuacao" value="f">Militante de movimento social<br>
+    <input type="checkbox" name="naturezaatuacao" value="g">Estudante<br>
+    <input type="checkbox" name="naturezaatuacao" value="h">Pesquisador<br>
+    <input type="checkbox" name="naturezaatuacao" value="i">Voluntário<br>
+    Outro, especifique: <input type="text" name="naturezaatuacaooutro"><br>
+  </td>
+</tr>
+ 
+</table>
+<div class="separator"></div>
+<table class="data" width="100%">
+
+<tr valign="top">
+  <td class="label"><strong>Quais, dentre os temas abaixo, você gostaria de discutir durante o Encontro
+Nacional da Rede Saúde e Cultura? (indique até duas prioridades):</strong><br/><br/></td>
+</tr>
+<tr valign="top">
+  <td class="value">
+    <input type="checkbox" name="temas" value="a">Práticas Tradicionais em Saúde<br>
+    <input type="checkbox" name="temas" value="b">Práticas integrativas e complementares em saúde<br>
+    <input type="checkbox" name="temas" value="c">Equidade em saúde e cultura<br>
+    <input type="checkbox" name="temas" value="d">Saúde Indígena<br>
+    <input type="checkbox" name="temas" value="e">Saúde Mental<br>
+    <input type="checkbox" name="temas" value="f">A Arte e o cuidado à saúde (promoção, prevenção e reestabelecimento da
+saúde)<br>
+    <input type="checkbox" name="temas" value="g">Controle social, participação e solidariedade<br>
+    <input type="checkbox" name="temas" value="h">Acesso a conhecimentos e expressões culturais tradicionais<br>
+    <input type="checkbox" name="temas" value="i">Necessidades de formação para apoiar a gestão, os serviços e as práticas na
+interface saúde e cultura<br>  
+  <br>
+  </td>
+</tr>
+
+</table>
 
 <input type="hidden" value="." name="mailingAddress" /> 
 
 <input type="hidden" value="BR" name="country" />	
 
-</table>
+
 
 <div class="separator"></div>
 <br/>
@@ -142,7 +196,7 @@
  </p>
 <br/>
 <p> Para saber mais sobre a Rede Saúde e Cultura na internet acesse o 
-<a href="http://www.next.icict.fiocruz.br/sec/sobre">Sobre a rede na internet</a>
+<a href="http://www.next.icict.fiocruz.br/sec/sobre" target="_blank">Sobre a rede na internet</a>
 </p>
 <br/>
 <table class="data" width="100%">
@@ -150,16 +204,15 @@
 <tr valign="top">
  <td class="label">Você gostaria de participar da 
  <a href="http://www.next.icict.fiocruz.br/sec/" target="_blank">Rede Saúde e Cultura na internet</a>
- e aceita os <a href="http://www.next.icict.fiocruz.br/sec/termos-de-servico">termos de serviço da rede</a>?
+ e aceita os <a href="http://www.next.icict.fiocruz.br/sec/termos-de-servico" target="_blank">termos de serviço da rede</a>?
  </td>
 </tr>
 
 <tr valign="top">
- 
   <td class="value">
     <select name="participardarede" id="participardarede" class="selectMenu">
-      <option value="1">Sim eu quero participar da Rede da Rede Saúde e Cultura na internet</option>
-      <option value="0">Não quero participar ou não concordo com os termos da rede</option>
+      <option value="1">Sim, eu gostaria de participar da Rede da Rede Saúde e Cultura na internet</option>
+      <option value="0">Não gostaria de participar ou não concordo com os termos da rede</option>
     </select>
   </td>
   
@@ -168,14 +221,6 @@
 </table>
 
 {/if}{* user is logged in *}
-</div>
-<div class="separator"></div>
-<div id="specialRequests">
-<h3>{translate key="schedConf.registration.specialRequests"}</h3>
-
-<p><label for="specialRequests">{translate key="schedConf.registration.specialRequests.description"}</label></p>
-
-<p><textarea name="specialRequests" id="specialRequests" cols="60" rows="10" class="textArea">{$specialRequests|escape}</textarea></p>
 </div>
 <div class="separator"></div>
 
