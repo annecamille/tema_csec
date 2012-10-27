@@ -116,7 +116,7 @@
 	<td class="value"><textarea name="interests[{$formLocale|escape}]" id="interests" rows="5" cols="40" class="textarea">{$interests[$formLocale]|escape}</textarea></td>
 </tr>
 <tr valign="top">
-	<td class="label">{fieldLabel name="biography" key="user.biography"}<br />{translate key="user.biography.description"}</td>
+	<td class="label">{fieldLabel name="biography" key="user.biography"}<br />Fale um pouco sobre você e suas atividades profissionais e acadêmicas</td>
 	<td class="value"><textarea name="biography[{$formLocale|escape}]" id="biography" rows="5" cols="40" class="textArea">{$biography[$formLocale]|escape}</textarea></td>
 </tr>
 <tr valign="top">
