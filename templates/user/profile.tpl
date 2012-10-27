@@ -122,6 +122,8 @@
 <tr valign="top">
        <td class="label">
 	       {fieldLabel name="profileImage" key="user.profile.form.profileImage"}
+	       <br/>
+	       Tamanho em pixels(150x150px) e tipo de arquivo .jpg ou .png 
        </td>
        <td class="value">
 	       <input type="file" id="profileImage" name="profileImage" class="uploadField" /> <input type="submit" name="uploadProfileImage" value="{translate key="common.upload"}" class="button" />
