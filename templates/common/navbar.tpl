@@ -11,11 +11,11 @@
 	<ul class="menu">
 		<li class="home"><a href="{url context=$homeContext op="index"}">{translate key="navigation.home"}</a></li>
 		
-		<li><a href="{$baseUrl}/index.php/CRSC/index/pages/view/sobre">{translate key="navigation.about"}</a></li>
+		<li><a href="{$baseUrl}/index.php/CRSC/index/pages/view/sobre/">{translate key="navigation.about"}</a></li>
 		
-		<li><a href="http://www.next.icict.fiocruz.br/conferencias/programacao.pdf">Programação</a></li>
+		<li><a href="http://www.saudecultura.fiocruz.br/encontro/programacao.pdf">Programação</a></li>
 
-		{if $currentConference}
+		{if $currentConference} 
 
 			{if $enableAnnouncements}
 				<li><a href="{url page="announcement"}">{translate key="announcement.announcements"}</a></li>
