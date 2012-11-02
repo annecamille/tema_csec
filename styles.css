@@ -631,3 +631,56 @@ table.data td.label {
 	vertical-align: top;
 }
 
+/* BARRA BRASIL */
+/* retirado do site principal do NEXT */
+#barra-brasil {
+    position:relative;
+    overflow:hidden;
+    width: 100%;
+    background: #00500F url( ./images/barra-brasil-v3-bgx.png) center bottom no-repeat;
+}
+
+#barra-brasil .barra {
+    display: block;
+    width: auto;
+    height:28px;
+    margin: 0 auto;
+    background: url( ./images/barra-brasil-v3-bgx.gif) 0 bottom repeat-x;
+}
+
+#barra-brasil .barra ul {
+    float: right;
+    width: auto;
+}
+
+#barra-brasil .barra ul li {
+    float: left;
+    padding-left: 25px;
+}
+
+#barra-brasil .ai {
+    display: block;
+    width: 161px;
+    height: 28px;
+    text-indent: -9999px;
+    background: #00500F url(./images/ai.png) no-repeat 0 4px;
+}
+
+#barra-brasil .brasilgov {
+    display: block;
+    width: 110px;
+    height: 28px;
+    text-indent: -9999px;
+    background: #00500F url(./images/brasil.png) no-repeat 0 4px;
+}
+div#fiocruz { 
+  background:#085222; 
+  height:33px; 
+}
+div#fiocruz {
+  background: url("http://www.fiocruz.br/icict/templates/htm/fiocruz_cict_novo/img/bg_fiocruz.jpg") repeat-x;
+}
+
+
+
+

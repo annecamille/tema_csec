@@ -61,13 +61,25 @@
 	{if $leftSidebarCode && $rightSidebarCode}<link rel="stylesheet" href="{$baseUrl}/styles/bothSidebars.css" type="text/css" />{/if}
 
 	{foreach from=$stylesheets item=cssUrl}
-		<link rel="stylesheet" href="{$cssUrl}" type="text/css" />
+		<link rel="stylesheet" href="{$cssUrl}?v1" type="text/css" />
 	{/foreach}
 
 	<script type="text/javascript" src="{$baseUrl}/lib/pkp/js/general.js"></script>
 	{$additionalHeadData}
 </head>
 <body>
+<div id="barras-governo">
+  <div id="barra-brasil">
+      <div class="barra">
+          <ul>
+             <li class="acesso"><a href="http://www.acessoainformacao.gov.br" class="ai" title="Acesso à informação">www.sic.gov.br</a></li>
+             <li><a href="http://www.brasil.gov.br" class="brasilgov" title="Portal de Estado do Brasil">www.brasil.gov.br</a></li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+
 <div id="container">
 
 <div id="header">
